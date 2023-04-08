@@ -2,13 +2,13 @@
 
 public interface IDatabaseNameProvider
 {
-    string Get();
+    string Get(Guid id);
 }
 
 public class DatabaseNameProvider: IDatabaseNameProvider
 {
-    public string Get()
+    public string Get(Guid id)
     {
-        throw new NotImplementedException();
+        return $"VPClient_{id.ToString()}";
     }
 }

@@ -51,8 +51,6 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="BotCommand\CommandHandler.cs" />
-        <Compile Include="BotCommand\Handlers\RegisterCommandHandler.cs" />
         <Compile Include="Di.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>

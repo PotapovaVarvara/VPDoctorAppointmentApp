@@ -32,13 +32,18 @@
     <ItemGroup>
       <ProjectReference Include="..\Dto\Dto.csproj" />
       <ProjectReference Include="..\Identity\Identity.csproj" />
+      <ProjectReference Include="..\Infrastructure\Infrastructure.csproj" />
       <ProjectReference Include="..\Repository.Infrastructure\Repository.Infrastructure.csproj" />
       <ProjectReference Include="..\Repository\Repository.csproj" />
-      <ProjectReference Include="..\Services\Services.csproj" />
+      <ProjectReference Include="..\ServicesBLL\ServicesBLL.csproj" />
     </ItemGroup>
 
     <ItemGroup>
+      <TypeScriptCompile Include="ClientApp\src\components\AddDoctor\AddDoctorForm.tsx" />
+      <TypeScriptCompile Include="ClientApp\src\components\AddDoctor\ScheduleSlider.tsx" />
       <TypeScriptCompile Include="ClientApp\src\components\Dashboard\Dashboard.tsx" />
+      <TypeScriptCompile Include="ClientApp\src\components\ScheduleTable\ScheduleTable.tsx" />
+      <TypeScriptCompile Include="ClientApp\src\components\StaticticsWidget\StatisticsWidget.tsx" />
     </ItemGroup>
 
     <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

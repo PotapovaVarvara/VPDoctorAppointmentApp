@@ -1,10 +1,8 @@
-﻿using System;
-using System.Threading.Tasks;
-using DomainModels.Messaging;
+﻿using DomainModels.Messaging;
 using Services.BotCommand.Handlers;
 using VPMessageType = DomainModels.Messaging.MessageType;
 
-namespace Services.BotCommand
+namespace ServicesBLL.BotCommand
 {
     public interface ICommandHandler
     {

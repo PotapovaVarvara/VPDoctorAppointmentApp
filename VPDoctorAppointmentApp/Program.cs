@@ -1,11 +1,5 @@
-using System.IdentityModel.Tokens.Jwt;
-using System.Security.Claims;
-using System.Text;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.IdentityModel.Tokens;
 using Repository.Infrastructure;
 using Repository.Infrastructure.User;
-using VPDoctorAppointmentApp;
 using Identity;
 using Repository;
 using Services;

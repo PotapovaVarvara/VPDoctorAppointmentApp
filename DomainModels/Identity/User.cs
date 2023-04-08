@@ -9,5 +9,16 @@ namespace DomainModels.Identity
         public string Surname { set; get; }
         
         public DateTime DOB { set; get; }
+        
+        public string PhoneNumber { set; get; }
+
+        public User(string name, string surname, DateTime dob, string phoneNumber)
+        {
+            Name = name;
+            Surname = surname;
+            DOB = dob;
+            PhoneNumber = phoneNumber;
+           
+        }
     }
 }

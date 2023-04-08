@@ -2,7 +2,7 @@
 
 namespace Repository.Doctor
 {
-    public interface IDoctorRepository
+    public interface IDoctorRepository : IRepository<DomainModels.Doctor.Doctor>
     {
         
     }
